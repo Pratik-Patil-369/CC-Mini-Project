@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "title": "Sum of Two Numbers",
+    "difficulty": "Easy",
+    "description": "Read two integers from standard input (each on a new line) and print their sum.",
+    "sampleInput": "10\n20",
+    "sampleOutput": "30",
+    "testCases": [
+      { "input": "10\n20", "expected": "30" },
+      { "input": "-5\n5", "expected": "0" },
+      { "input": "0\n0", "expected": "0" },
+      { "input": "999999\n1", "expected": "1000000" }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Even or Odd",
+    "difficulty": "Easy",
+    "description": "Read a single integer from input. Print \"Even\" if it is even, or \"Odd\" if it is odd.",
+    "sampleInput": "7",
+    "sampleOutput": "Odd",
+    "testCases": [
+      { "input": "7", "expected": "Odd" },
+      { "input": "4", "expected": "Even" },
+      { "input": "0", "expected": "Even" },
+      { "input": "-3", "expected": "Odd" }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Reverse a String",
+    "difficulty": "Easy",
+    "description": "Read a single string from input and print it reversed.",
+    "sampleInput": "hello",
+    "sampleOutput": "olleh",
+    "testCases": [
+      { "input": "hello", "expected": "olleh" },
+      { "input": "abcdef", "expected": "fedcba" },
+      { "input": "a", "expected": "a" },
+      { "input": "racecar", "expected": "racecar" }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Factorial",
+    "difficulty": "Medium",
+    "description": "Read a non-negative integer N from input and print its factorial (N!). The factorial of 0 is 1.",
+    "sampleInput": "5",
+    "sampleOutput": "120",
+    "testCases": [
+      { "input": "5", "expected": "120" },
+      { "input": "0", "expected": "1" },
+      { "input": "1", "expected": "1" },
+      { "input": "10", "expected": "3628800" }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "FizzBuzz Single",
+    "difficulty": "Medium",
+    "description": "Read an integer N. Print \"FizzBuzz\" if N is divisible by both 3 and 5, \"Fizz\" if divisible by only 3, \"Buzz\" if divisible by only 5, or the number itself otherwise.",
+    "sampleInput": "15",
+    "sampleOutput": "FizzBuzz",
+    "testCases": [
+      { "input": "15", "expected": "FizzBuzz" },
+      { "input": "9", "expected": "Fizz" },
+      { "input": "10", "expected": "Buzz" },
+      { "input": "7", "expected": "7" }
+    ]
+  }
+]

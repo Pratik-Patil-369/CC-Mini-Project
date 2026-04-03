@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+
+# Build output
+client/dist/
+
+# Database
+server/submissions.db
+server/submissions.db-shm
+server/submissions.db-wal
+
+# Docker temp files
+server/temp/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Env
+.env
+.env.local

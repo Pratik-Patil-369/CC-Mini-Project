@@ -1,0 +1,14 @@
+services:
+  app:
+    build: .
+    ports:
+      - "3000:3000"
+    volumes:
+      # Mount host Docker socket so the app can spawn containers
+      - /var/run/docker.sock:/var/run/docker.sock
+      # Share temp directory between app container and spawned containers
+      - /tmp/codeforge-temp:/app/server/temp
+    environment:
+      - NODE_ENV=production
+      # HOST_TEMP_DIR = the host-side path for docker run -v mounts
+      - HOST_TEMP_DIR=/tmp/codeforge-temp
