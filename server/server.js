@@ -61,8 +61,8 @@ app.use(express.static(clientDist));
 const DOCKER_IMAGES = {
   python: "python:3.9-alpine",
   cpp: "gcc:latest",
-  java: "openjdk:17-alpine",
-  javascript: "node:18-alpine",
+  java: "eclipse-temurin:17-alpine",
+  javascript: "node:22-alpine",
 };
 
 const FILE_EXTENSIONS = {

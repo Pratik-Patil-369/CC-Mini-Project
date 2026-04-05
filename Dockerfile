@@ -10,8 +10,11 @@ RUN npm run build
 # ── Stage 2: Production Server ──────────────────────────
 FROM node:22-alpine
 
-# Install build dependencies for native modules (better-sqlite3)
+# Install build dependencies for native modules
 RUN apk add --no-cache python3 make g++
+
+# Copy docker binary from official docker image (reliable DinD method)
+COPY --from=docker:latest /usr/local/bin/docker /usr/local/bin/docker
 
 WORKDIR /app
 
